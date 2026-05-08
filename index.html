@@ -55,6 +55,7 @@
 
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+body { word-spacing: 0; letter-spacing: 0; -webkit-font-smoothing: antialiased; }
 
 :root {
   --cream:      #FBF7F2;
@@ -199,8 +200,8 @@ html, body {
 .p1-nome-overlay {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  background: linear-gradient(to top, rgba(251,247,242,1) 0%, rgba(251,247,242,1) 30%, rgba(251,247,242,0.8) 60%, transparent 100%);
-  padding: 14mm 6mm 4mm;
+  background: linear-gradient(to top, rgba(251,247,242,1) 0%, rgba(251,247,242,0.95) 20%, rgba(251,247,242,0.5) 45%, transparent 100%);
+  padding: 18mm 6mm 4mm;
   text-align: center;
   z-index: 3;
 }
@@ -323,15 +324,15 @@ html, body {
 /* DAS vertical na lateral esquerda */
 .logo-interno-das {
   font-family: 'Poppins', sans-serif;
-  font-size: 5.5pt; font-weight: 700;
-  letter-spacing: 0.2em; color: var(--text-soft);
+  font-size: 5pt; font-weight: 700;
+  letter-spacing: 0.3em; color: var(--text-soft);
   text-transform: uppercase;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  padding-right: 1.5mm;
-  margin-right: 1.5mm;
-  border-right: 1.5px solid var(--borda-rg);
-  display: flex; align-items: center; justify-content: center;
+  border-right: 1px solid var(--borda-rg);
+  padding-right: 2mm;
+  margin-right: 2mm;
+  display: flex; align-items: center;
+  writing-mode: horizontal-tb;
+  transform: none;
 }
 
 .logo-interno-textos {
@@ -360,6 +361,7 @@ html, body {
   color: var(--burgundy); line-height: 1;
   padding-bottom: 4mm;
   border-bottom: 1px solid var(--borda);
+  word-spacing: 0px;
 }
 
 .sec-titulo em {
@@ -407,7 +409,8 @@ html, body {
   font-family: 'Poppins', sans-serif;
   font-size: 8.5pt; font-weight: 300;
   color: var(--text); line-height: 1.65;
-  word-spacing: normal;
+  word-spacing: 0px;
+  letter-spacing: 0.01em;
   font-kerning: none;
 }
 
@@ -424,6 +427,8 @@ html, body {
   font-family: 'Poppins', sans-serif;
   font-size: 9pt; font-weight: 300;
   color: var(--text); line-height: 1.8;
+  word-spacing: 0px;
+  letter-spacing: 0.01em;
 }
 .carta-corpo p { margin-bottom: 4mm; }
 .carta-corpo strong { font-weight: 600; color: var(--text); }
@@ -492,6 +497,8 @@ html, body {
   font-family: 'Poppins', sans-serif;
   font-size: 8.5pt; font-weight: 600;
   color: var(--burgundy); margin-bottom: 1mm;
+  word-spacing: 0px;
+  letter-spacing: 0.01em;
 }
 .metrica-desc {
   font-family: 'Poppins', sans-serif;
@@ -645,17 +652,7 @@ html, body {
   <div class="pag-body">
 
     <!-- Logo CDP interno igual ao original -->
-    <div class="logo-interno">
-      <div class="logo-interno-linha"></div>
-      <div class="logo-interno-bloco">
-        <div class="logo-interno-das">DAS</div>
-          <div class="logo-interno-textos">
-            <div class="logo-interno-nome">Comunidade ✦</div>
-            <span class="logo-interno-protagonistas">Protagonistas</span>
-          </div>
-      </div>
-      <div class="logo-interno-linha"></div>
-    </div>
+    <div class="logo-interno"><img src="https://raw.githubusercontent.com/bustiferramentas-web/pdi-protagonistas/refs/heads/main/logo-cdp.png" style="width:50mm; height:auto; display:block; margin:0 auto 1mm;" /></div>
 
     <div class="sec-titulo">O que é esse <em>Plano de Aceleração?</em></div>
 
@@ -703,17 +700,7 @@ html, body {
 
   <div class="pag-body">
 
-    <div class="logo-interno">
-      <div class="logo-interno-linha"></div>
-      <div class="logo-interno-bloco">
-        <div class="logo-interno-das">DAS</div>
-          <div class="logo-interno-textos">
-            <div class="logo-interno-nome">Comunidade ✦</div>
-            <span class="logo-interno-protagonistas">Protagonistas</span>
-          </div>
-      </div>
-      <div class="logo-interno-linha"></div>
-    </div>
+    <div class="logo-interno"><img src="https://raw.githubusercontent.com/bustiferramentas-web/pdi-protagonistas/refs/heads/main/logo-cdp.png" style="width:50mm; height:auto; display:block; margin:0 auto 1mm;" /></div>
 
     <div class="sec-titulo">Diagnóstico de Negócios <em>e Plano de Ação</em></div>
 
@@ -766,17 +753,7 @@ html, body {
 
   <div class="pag-body">
 
-    <div class="logo-interno">
-      <div class="logo-interno-linha"></div>
-      <div class="logo-interno-bloco">
-        <div class="logo-interno-das">DAS</div>
-          <div class="logo-interno-textos">
-            <div class="logo-interno-nome">Comunidade ✦</div>
-            <span class="logo-interno-protagonistas">Protagonistas</span>
-          </div>
-      </div>
-      <div class="logo-interno-linha"></div>
-    </div>
+    <div class="logo-interno"><img src="https://raw.githubusercontent.com/bustiferramentas-web/pdi-protagonistas/refs/heads/main/logo-cdp.png" style="width:50mm; height:auto; display:block; margin:0 auto 1mm;" /></div>
 
     <div class="sec-titulo">Diagnóstico de Negócios <em>e Plano de Ação</em></div>
 
@@ -827,17 +804,7 @@ html, body {
 
   <div class="pag-body">
 
-    <div class="logo-interno">
-      <div class="logo-interno-linha"></div>
-      <div class="logo-interno-bloco">
-        <div class="logo-interno-das">DAS</div>
-          <div class="logo-interno-textos">
-            <div class="logo-interno-nome">Comunidade ✦</div>
-            <span class="logo-interno-protagonistas">Protagonistas</span>
-          </div>
-      </div>
-      <div class="logo-interno-linha"></div>
-    </div>
+    <div class="logo-interno"><img src="https://raw.githubusercontent.com/bustiferramentas-web/pdi-protagonistas/refs/heads/main/logo-cdp.png" style="width:50mm; height:auto; display:block; margin:0 auto 1mm;" /></div>
 
     <div class="sec-titulo">Acompanhamento das <em>Suas Métricas</em></div>
 
@@ -850,7 +817,7 @@ html, body {
     <div class="metrica-item">
       <div class="metrica-num">01</div>
       <div class="metrica-conteudo">
-        <div class="metrica-titulo">( &nbsp;) Rastrear qual canal mais gera vendas</div>
+        <div class="metrica-titulo">Rastrear qual canal mais gera vendas</div>
       </div>
       <div class="metrica-check"></div>
     </div>
@@ -858,7 +825,7 @@ html, body {
     <div class="metrica-item">
       <div class="metrica-num">02</div>
       <div class="metrica-conteudo">
-        <div class="metrica-titulo">( &nbsp;) Rastrear os Links com Sub id nos canais de divulgação</div>
+        <div class="metrica-titulo">Rastrear os Links com Sub id nos canais de divulgação</div>
       </div>
       <div class="metrica-check"></div>
     </div>
@@ -866,7 +833,7 @@ html, body {
     <div class="metrica-item">
       <div class="metrica-num">03</div>
       <div class="metrica-conteudo">
-        <div class="metrica-titulo">( &nbsp;) Mapear os principais produtos que mais gerou cliques</div>
+        <div class="metrica-titulo">Mapear os principais produtos que mais gerou cliques</div>
       </div>
       <div class="metrica-check"></div>
     </div>
@@ -874,7 +841,7 @@ html, body {
     <div class="metrica-item">
       <div class="metrica-num">04</div>
       <div class="metrica-conteudo">
-        <div class="metrica-titulo">( &nbsp;) Mapear os principais produtos que geram vendas</div>
+        <div class="metrica-titulo">Mapear os principais produtos que geram vendas</div>
       </div>
       <div class="metrica-check"></div>
     </div>
@@ -882,7 +849,7 @@ html, body {
     <div class="metrica-item">
       <div class="metrica-num">05</div>
       <div class="metrica-conteudo">
-        <div class="metrica-titulo">( &nbsp;) Mapear uma lista dos produtos vendidos</div>
+        <div class="metrica-titulo">Mapear uma lista dos produtos vendidos</div>
       </div>
       <div class="metrica-check"></div>
     </div>
